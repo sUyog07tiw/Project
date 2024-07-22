@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&display=swap");
+* {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: crimson;
+  font-family: Sharp Grotesk;
+  border-style: groove;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+
+.logo img {
+  width: 150px;
+  height: 100px;
+  justify-content: center;
+}
+
+.logo a {
+  font-size: 35px;
+  font-weight: 600;
+  color: red;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  z-index: 0; /* Full viewport height */
+}
+
+.background-image {
+  flex: 1;
+  position: relative;
+  background-image: url("Hero1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-column {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-START; /* Aligns content to the left */
+  padding: 120px;
+  text-align: left;
+  height: 100%; /* Ensure the column takes the full height */
+}
+
+.text-content {
+  color: aliceblue;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.5vw;
+}
+
+/* Styles for the button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Styles for the button */
+.styled-button {
+  background-color: transparent; /* Green background */
+  border: 1px solid WHITE; /* Remove border */
+  color: WHITE; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Inline block element */
+  font-size: 16px; /* Set font size */
+  margin: 4px 2px; /* Some margin */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the button */
+.styled-button:hover {
+  background-color: black;
+  color: white;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: black;
+  color: aliceblue;
+  padding: 35px;
+  margin: 3px;
+}
+
+.footer-last,
+.footer-bottom {
+  padding: 25px;
+  margin: 5px;
+}
+
+/* contact portion */
+
+.maincontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  margin-bottom: auto;
+  background-color: powderblue;
+}
+
+main h1 {
+  font-size: 2em;
+  color: black;
+  margin-bottom: 20px;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  max-width: 400px;
+  width: 100%;
+}
+
+label {
+  display: inline-flex;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+label[for="terms"] {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: crimson;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+input[type="submit"]:hover {
+  background-color: #f31818;
+}
+
+/* Style for footer */
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Gallery */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -4px;
+  background-attachment: fixed;
+  background-color: (#ffffff);
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Models CSS */
+
+/* Style for the body */
